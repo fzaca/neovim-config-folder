@@ -2,6 +2,9 @@
 " Basic settings
 "=========================================
 
+" Activate the mouse scrool in page
+set mouse=a
+
 " set system clipboard as default
 set clipboard=unnamed
 
@@ -46,6 +49,9 @@ color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 set nocursorline
+
+" speed line number
+set number relativenumber
 
 " per-file-extension settings
 filetype plugin on

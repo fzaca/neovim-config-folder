@@ -48,6 +48,9 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Sneak Config
+let g:sneak#label = 1
+
 " Tab for triggering completion
 inoremap <silent><expr> <TAB>
   \ pumvisible() ? "\<C-n>" :
