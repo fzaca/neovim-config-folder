@@ -7,6 +7,7 @@ set mouse=a
 
 " set system clipboard as default
 set clipboard=unnamed
+set clipboard+=unnamedplus
 
 " turn off vi compatability
 set nocompatible
@@ -50,8 +51,11 @@ set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
 set nocursorline
 
-" speed line number
-set number relativenumber
+" cursor
+hi Cursor cterm=reverse ctermbg=red ctermfg=white guibg=#ef2929 guifg=white
+
+" Speed number
+set number norelativenumber
 
 " per-file-extension settings
 filetype plugin on

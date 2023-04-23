@@ -3,11 +3,30 @@
 "=========================================
 
 set background=dark
-colorscheme gruvbox
-let g:airline_theme = 'base16'
+colorscheme gruvbox " gruvbox
+let g:airline_theme = 'base16_material'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_left_padding = 2
+let g:airline_right_padding = 2
+
+" config for theme
+set cursorline
+hi! CursorLine guibg=None
+hi! CursorLineNr guibg=none
+
+" linea de numeros
+highlight LineNr ctermbg=none guibg=none
+highlight CursorLineNr ctermfg=none guifg=#fabd2f
+
+" Resaltar constantes en Python en amarillo
+augroup myPythonColors
+  autocmd!
+  autocmd ColorScheme * highlight pythonConstant ctermfg=yellow guifg=yellow
+augroup END
 
 " hiPairs
-let g:hiPairs_enable_matchParen = 0
+" let g:hiPairs_enable_matchParen = 0
 
 " vim-json
 let g:vim_json_syntax_conceal = 0

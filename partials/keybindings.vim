@@ -17,5 +17,6 @@ nnoremap t, :tabprevious<CR>
 nnoremap t. :tabnext<CR>
 
 nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-p> :!python3.8 %<CR>
 
 noremap <C-h> :set hlsearch! hlsearch?<CR>
