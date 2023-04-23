@@ -19,6 +19,9 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 " Plug 'Yggdroot/hiPairs'
+Plug 'easymotion/vim-easymotion'
+Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-surround'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
